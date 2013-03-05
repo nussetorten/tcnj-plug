@@ -10,3 +10,7 @@ ul#tiles-hideout * { display: none; }
 
 ul#tags { list-style-type: none; margin: 10px 0px 9px 0px; }
 ul#tags > li { width: 50px; height: 20px; padding: 10px 3px 10px 6px; display: inline; }
+
+#uptown { background: #eee; }
+#midtown { background: #9ae; }
+#downtown { background: #222; color: #eee; }
