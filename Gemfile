@@ -42,3 +42,6 @@ gem 'haml-rails'
 
 # To use twitter bootstrap
 gem 'twitter-bootstrap-rails'
+
+# To use JQueryUI
+gem 'jquery-ui-rails'

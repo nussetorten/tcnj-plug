@@ -1,0 +1,8 @@
+.tag > ul { list-style-type: none; }
+.tag > ul > li { display: inline; }
+
+#tag1 { background: #123; } 
+#tag2 { background: #789; }
+#tag3 { background: #456; }
+
+.invis * { display: none; }

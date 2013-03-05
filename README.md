@@ -6,6 +6,8 @@ Clubs often have shared interests but weak ties.  Wouldn't it be great if the ve
 
 Stretch - Individuals can publicize what they're good at.  If you need art or something organized, your on-campus resources are reaching out to you!  Keep a reddit-style feed of requests and email them to everyone on the tag!
 
+Style - Interface should feel like Netflix and Rdio smooshed together, with YOUR events instead of random movies.
+
 =========
 ### Club Functions
 I would like to implement the following features from the perspective of the club
