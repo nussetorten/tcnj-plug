@@ -1,4 +1,5 @@
 TcnjPlug::Application.routes.draw do
+  resources :plugs
   resources :clubs
   match '/' => 'pages#landing'
 

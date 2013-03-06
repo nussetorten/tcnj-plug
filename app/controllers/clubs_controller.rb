@@ -6,7 +6,7 @@ class ClubsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @clubs }
+      format.json { render json: @clubs.map(&:name) }
     end
   end
 

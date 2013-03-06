@@ -19,7 +19,7 @@ $(function() {
     });
 
     hideLandingForm();
-    updateAC();
+    updateWhoAC();
 
     function hideFauxForm() {
 	$('#faux-form').fadeTo(500, 0.00);
@@ -30,8 +30,9 @@ $(function() {
     function revealLandingForm()  {
 	$('#landing-form').slideDown();
     };
-    function updateAC() {
-	var tags = ["nick","alex","andrew","theresa","joey"];
-	$('#faux-form-search-field').autocomplete({ source: tags });
+    function updateWhoAC() {
+	$.getJSON('/clubs.json', function(data) {
+	    $('#i-who').autocomplete({ source: data });
+	});
     };
 });

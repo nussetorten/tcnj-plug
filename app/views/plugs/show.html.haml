@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @plug.title
+%p
+  %b Desc:
+  = @plug.desc
+%p
+  %b Club:
+  = @plug.club.name
+
+= link_to 'Edit', edit_plug_path(@plug)
+\|
+= link_to 'Back', plugs_path

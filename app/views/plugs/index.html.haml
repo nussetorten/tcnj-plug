@@ -1,0 +1,23 @@
+%h1 Listing plugs
+
+%table
+  %tr
+    %th Title
+    %th Desc
+    %th Club
+    %th
+    %th
+    %th
+
+  - @plugs.each do |plug|
+    %tr
+      %td= plug.title
+      %td= plug.desc
+      %td= plug.club.name
+      %td= link_to 'Show', plug
+      %td= link_to 'Edit', edit_plug_path(plug)
+      %td= link_to 'Destroy', plug, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Plug', new_plug_path
