@@ -1,9 +1,6 @@
 TcnjPlug::Application.routes.draw do
   resources :clubs
-  match '/' => 'pages#club'
-  match '/acct' => 'pages#acct'
-  match '/noacct' => 'pages#noacct'
-
+  match '/' => 'pages#landing'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

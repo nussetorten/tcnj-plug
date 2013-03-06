@@ -8,6 +8,8 @@ Stretch - Individuals can publicize what they're good at.  If you need art or so
 
 Style - Interface should feel like Netflix and Rdio smooshed together, with YOUR events instead of random movies.
 
+_Note - things have become very complicated quickly.  I want to reduce this idea to its core - a one-stop-plugs-all website for events on campus.  Dump your event, propegate to the network where possible.  We'll have plugging an event ALSO make an account.  One-page site.  Make an event + sign up._
+
 =========
 ### Club Functions
 I would like to implement the following features from the perspective of the club

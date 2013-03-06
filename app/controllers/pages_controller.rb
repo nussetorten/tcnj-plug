@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  def landing
+  end
   def club
     respond_to do |format|
       format.html # club.html.erb

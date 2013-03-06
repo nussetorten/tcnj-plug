@@ -1,0 +1,16 @@
+ul#tiles { list-style-type: none; margin: 0px 0px -1px 3px; }
+ul#tiles > li { display: inline; margin: -3px; }
+ul#tiles > li.lbutton:hover > img { opacity: 0.33; background: #F18; }
+ul#tiles > li.rbutton:hover > img { opacity: 0.33; background: #F18; }
+
+ul#tiles-hideout { display: none; }
+ul#tiles-hideout * { display: none; }
+
+#uptop { background: #123; }
+
+ul#tags { list-style-type: none; margin: 10px 0px 9px 0px; }
+ul#tags > li { width: 50px; height: 20px; padding: 10px 3px 10px 6px; display: inline; }
+
+#uptown { background: #eee; }
+#midtown { background: #9ae; }
+#downtown { background: #222; color: #eee; }

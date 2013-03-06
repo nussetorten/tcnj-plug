@@ -1,0 +1,24 @@
+.not-footer
+  .container
+    .row
+      .span12
+        .masthead.main plugit
+    .row
+      #form-container.span6.offset3
+        #faux-form
+          %input#faux-form-search-field.input-xxlarge.search-query{ 'type' => 'text', 'placeholder' => 'What do you want to share with the campus?' }
+        %form#landing-form.form-horizontal
+          .control-group
+            %label.control-label{ 'for' => 'i-what' } what
+            .controls
+              %input#i-what{ 'type' => 'text', 'placeholder' => 'is its name' } 
+          .control-group
+            %label.control-label{ 'for' => 'i-why' } why
+            .controls
+              %input#i-why{ 'type' => 'text', 'placeholder' => 'should you go' } 
+          .control-group
+            %label.control-label{ 'for' => 'i-who' } who
+            .controls
+              %input#i-who{ 'type' => 'text', 'placeholder' => 'is running the show' }
+  .push
+.footer Made by Nicholas Vitovitch
