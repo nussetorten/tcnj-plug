@@ -13,7 +13,7 @@ $(function() {
     $('#faux-form-search-field').keyup(function(event) {
 	if(event.keyCode == 13) {
 	    $('#i-what').val($('#faux-form-search-field').val());
-	    $('#faux-form').fadeOut(1000);
+	    hideFauxForm();
 	    setTimeout(function(){revealLandingForm()}, 1000);
 	}
     });
@@ -21,6 +21,9 @@ $(function() {
     hideLandingForm();
     updateAC();
 
+    function hideFauxForm() {
+	$('#faux-form').fadeTo(500, 0.00);
+    };
     function hideLandingForm() {
 	$('#landing-form').hide();
     };
