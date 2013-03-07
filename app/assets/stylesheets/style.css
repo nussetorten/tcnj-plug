@@ -1,13 +1,15 @@
 /* Footer Magic */
 html, body { height : 100%; }
-.not-footer { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -4em; }
-.footer, .push { height: 4em; text-align: center; }
+.not-footer { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -120px; }
+.footer, .push { height: 120px; text-align: center; position: relative; }
+#footer-peel { position: absolute; bottom: 0; right: 0; width: 120px; height: 120px; }
+#footer-text { position: relative; top: 90px; }
 
 /* Masthead Magic */
 .masthead.main { font-family: 'Poiret One', cursive; font-size: 77px; height: 0px; text-align: center; padding: 50px 0px; }
 
 /* Form Magic */
-#form-container { border-style: solid; border-width: 2px; border-radius: 10px; padding: 10px; }
+#form-container { position: relative; border-style: solid; border-width: 2px; border-radius: 10px; padding: 10px; }
 #faux-form {}
 #faux-form-search-field {}
 form#landing-form {}
@@ -15,6 +17,7 @@ form#landing-form {}
 
 .triangle { border-color: rgba(1,1,1,0) rgba(1,1,1,0) #57af1a rgba(1,1,1,0); border-style: solid; border-width: 0px 6px 10px 6px; height: 0; width: 0; position: absolute; }
 
+#button { position: absolute; bottom: 0; right: 10px; text-align: center; width: 100px; font-family: 'Poiret One', cursive; font-size: 24px; }
 
 
 /* Overrides */

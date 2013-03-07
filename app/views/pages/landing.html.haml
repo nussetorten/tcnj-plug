@@ -8,17 +8,29 @@
         #faux-form
           %input#faux-form-search-field.input-xxlarge.search-query{ 'type' => 'text', 'placeholder' => 'What do you want to share with the campus?' }
         %form#landing-form.form-horizontal
-          .control-group
-            %label.control-label{ 'for' => 'i-what' } what
-            .controls
-              %input#i-what{ 'type' => 'text', 'placeholder' => 'is its name' } 
-          .control-group
-            %label.control-label{ 'for' => 'i-why' } why
-            .controls
-              %input#i-why{ 'type' => 'text', 'placeholder' => 'should you go' } 
-          .control-group
-            %label.control-label{ 'for' => 'i-who' } who
-            .controls
-              %input#i-who{ 'type' => 'text', 'placeholder' => 'is running the show' }
+          %p#button continue
+          #landing-form-first
+            .control-group
+              %label.control-label{ 'for' => 'i-what' } what
+              .controls
+                %input#i-what{ 'type' => 'text', 'placeholder' => 'is its name' } 
+            .control-group
+              %label.control-label{ 'for' => 'i-why' } why
+              .controls
+                %input#i-why{ 'type' => 'text', 'placeholder' => 'should you go' } 
+            .control-group
+              %label.control-label{ 'for' => 'i-who' } who
+              .controls
+                %input#i-who{ 'type' => 'text', 'placeholder' => 'is running the show' }
+          #landing-form-tags
+            %p Some cool way to select which tags to send this plug to
+          #landing-form-last
+            .control-group
+              %label.control-label{ 'for' => 'i-email' } @tcnj
+              .controls
+                %input#i-email{ 'type' => 'text', 'placeholder' => 'email here' }
+
   .push
-.footer Made by Nicholas Vitovitch
+.footer
+  #footer-text Made by Nicholas Vitovitch
+  %img#footer-peel{ 'src' => '/peel.png' }
