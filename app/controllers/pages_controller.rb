@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def landing
+    @tags = Tag.all;
   end
   def club
     respond_to do |format|

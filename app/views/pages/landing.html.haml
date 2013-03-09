@@ -22,15 +22,38 @@
               %label.control-label{ 'for' => 'i-who' } who
               .controls
                 %input#i-who{ 'type' => 'text', 'placeholder' => 'is running the show' }
+            .control-group
+              %label.control-label{ 'for' => 'i-where' } where
+              .controls
+                %input#i-where{ 'type' => 'text', 'placeholder' => 'is it happening' }
           #landing-form-tags
-            %p Some cool way to select which tags to send this plug to
+            .control-group
+              %label.control-label tag
+              .controls
+                %ul#tag-select.span2
+                  - @tags.each do |tag|
+                    %li.off{ 'style' => 'background: '+tag.color }= tag.name
+          #landing-form-datetime
+            .control-group
+              %label.control-label{ 'for' => 'i-start' } start
+              .controls
+                %input#i-start{ 'type' => 'date' }
+                %input#i-start-t{ 'type' => 'time' }
+            .control-group
+              %label.control-label{ 'for' => 'i-end' } end
+              .controls
+                %input#i-end{ 'type' => 'date' }
+                %input#i-end-t{ 'type' => 'time' }
           #landing-form-last
             .control-group
-              %label.control-label{ 'for' => 'i-email' } @tcnj
+              %label.control-label{ 'for' => 'i-email' } email
               .controls
-                %input#i-email{ 'type' => 'text', 'placeholder' => 'email here' }
+                .input-append
+                  %input#i-email{ 'type' => 'text', 'placeholder' => 'i.e. helpdesk' }
+                  %span.add-on @tcnj.edu
 
   .push
 .footer
   #footer-text Made by Nicholas Vitovitch
   %img#footer-peel{ 'src' => '/peel.png' }
+  %img#footer-candy{ 'src' => '/candy.jpg' }

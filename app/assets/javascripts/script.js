@@ -23,10 +23,16 @@ $(function() {
 	revealLandingForm();
 	setTimeout(function(){showMoreButton()}, 5000);
     });
-    $('#i-who').keyup(function(event) {
-	if(event.keyCode == 13) {
-	    $('#button').click();
-	}
+    $('#landing-form > div').each(function() {
+	$(this).find('input:last').keyup(function(event) {
+	    if(event.keyCode == 13) {
+		$('#button').click();
+	    }
+	});
+    });
+    $('#tag-select li').click(function() {
+	$(this).toggleClass('on');
+	$(this).toggleClass('off');
     });
 	    
 

@@ -5,7 +5,7 @@ Club.delete_all
 Tag.delete_all
 
 # Add
-["Science","Food","All","Music","Party","Dance","WTSR"].each do |name|
+["All","Acad","Science","Food","Music","Party","Dance","WTSR","Spirit"].each do |name|
   tag = Tag.new
   tag.name = name
   tag.color = "#";
