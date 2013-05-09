@@ -4,6 +4,7 @@ class CreatePlugs < ActiveRecord::Migration
       t.string :title
       t.string :desc
       t.belongs_to :club
+      t.has_many :tags
 
       t.timestamps
     end

@@ -1,23 +1,16 @@
-%h1 Listing plugs
-
-%table
-  %tr
-    %th Title
-    %th Desc
-    %th Club
-    %th
-    %th
-    %th
-
-  - @plugs.each do |plug|
-    %tr
-      %td= plug.title
-      %td= plug.desc
-      %td= plug.club.name
-      %td= link_to 'Show', plug
-      %td= link_to 'Edit', edit_plug_path(plug)
-      %td= link_to 'Destroy', plug, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
+.container
+  %h1 Plugs
+  .row
+    .span12
+      %h3 Here's something you'll probably like!
+      %ul#rel-tiles
+      - @rel.each do |plug|
+      - p = "plug_"+plug.id.to_s
+        %li
+          %p= plug.title
+          %p= plug.desc
+          =link_to "More", plug
+          =link_to "Edit", edit_plug_path(plug)
+          =link_to "Destroy", plug, :method => :delete, :data => { :confirm => 'Really????' }
+          =link_to plug.club.name, club_path(plug.club.id)
 = link_to 'New Plug', new_plug_path

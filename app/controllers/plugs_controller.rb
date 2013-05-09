@@ -2,11 +2,13 @@ class PlugsController < ApplicationController
   # GET /plugs
   # GET /plugs.json
   def index
-    @plugs = Plug.all
+    @rel = Plug.limit(4)
+    @hot = Plug.limit(4)
+    @now = Plug.limit(4)
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @plugs }
+      format.json { render json: Plug.all }
     end
   end
 

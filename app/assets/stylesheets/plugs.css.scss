@@ -1,3 +1,14 @@
 // Place all the styles related to the Plugs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#rel-tiles, #hot-tiles, #now-tiles {
+  list-style-type: none;
+}
+#rel-tiles > li, #hot-tiles > li, #now-tiles {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 5px 5px; 
+  background: #123456; 
+}
